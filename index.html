@@ -1,35 +1,199 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
- <head>
+<html lang="pt-br">
+
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-widht, initial-scale=1,0">
-    <title>Copa do Mundo da FIFA 2026™</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog do Timão</title>
+
     <style>
-        header {
-            background-color; blue;
-            color; white; /*Adicionado para destacar o texto no fundo azul*/
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
         }
-        main{ 
-            background-color;#0339fc;
-            color;#005f6b;
+
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        main {
+            background-color: #ffffff;
+            color: #222222;
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            gap: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .conteudo {
+            flex: 1;
+        }
+
+        h2 {
+            color: #000000;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+            color: #555555;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #dddddd;
+        }
+
+        .noticia {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 700px) {
+            main {
+                flex-direction: column;
+                margin: 10px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
+
 <body>
+
     <header>
-        <h1>Copa do Mundo</h1>
+        <h1>🖤🤍 Notícias do Timão</h1>
+        <p>As principais notícias sobre o Corinthians</p>
     </header>
-    
-    
+
     <main>
-       <p>As últimas notícias, entrevistas, estatísticas, resultados e próximos jogos da Copa do Mundo da FIFA 2026™.</p>
-        <p>Por Thiago</p>
+
+        <img
+            src="corinthians.png"
+            alt="Imagem relacionada ao Corinthians">
+
+        <div class="conteudo">
+
+            <div class="noticia">
+
+                <h2>Corinthians perde para o Coritiba no Brasileirão</h2>
+
+                <p class="artigo-autor">
+                    Por: Andrea Gugelmin
+                </p>
+
+                <p>
+                    O Corinthians foi derrotado pelo Coritiba por 2 a 1,
+                    neste domingo, pelo Campeonato Brasileiro.
+                    O jogo aconteceu no Estádio Couto Pereira.
+                </p>
+
+                <p>
+                    Com o resultado, o Timão ficou com 32 pontos e
+                    ocupa a 10ª posição na tabela do Brasileirão.
+                </p>
+
+                <button class="curtir">
+                    ❤️ <span>0</span>
+                </button>
+
+                <button class="curtir">
+                    👍 <span>0</span>
+                </button>
+
+            </div>
+
+        </div>
+
     </main>
+
+    <main>
+
+        <img
+            src="corinthians.png"
+            alt="Imagem relacionada ao Corinthians">
+
+        <div class="conteudo">
+
+            <h2>Corinthians se prepara para o clássico contra o Santos</h2>
+
+            <p class="artigo-autor">
+                Por: Andrea Gugelmin
+            </p>
+
+            <p>
+                Depois da derrota para o Coritiba, o Corinthians terá
+                uma semana para se preparar para o próximo compromisso
+                pelo Campeonato Brasileiro.
+            </p>
+
+            <p>
+                O próximo adversário será o Santos, em um clássico
+                importante para o Timão na competição.
+            </p>
+
+            <button class="curtir">
+                ❤️ <span>0</span>
+            </button>
+
+            <button class="curtir">
+                👍 <span>0</span>
+            </button>
+
+        </div>
+
+    </main>
+
+    <script>
+        const botoes = document.querySelectorAll(".curtir");
+
+        botoes.forEach(function (botao) {
+
+            botao.addEventListener("click", function () {
+
+                const contador = botao.querySelector("span");
+
+                contador.textContent =
+                    Number(contador.textContent) + 1;
+
+            });
+
+        });
+    </script>
+
 </body>
-    
 
 </html>
-
-
-
-
