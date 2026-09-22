@@ -29,6 +29,10 @@
             font-size: 40px;
         }
 
+        header p {
+            font-size: 18px;
+        }
+
         main {
             background-color: #ffffff;
             color: #222222;
@@ -61,6 +65,11 @@
             color: #555555;
         }
 
+        .data {
+            color: #777777;
+            font-size: 14px;
+        }
+
         button {
             padding: 8px 12px;
             margin-right: 5px;
@@ -78,6 +87,16 @@
             margin-bottom: 20px;
         }
 
+        .categoria {
+            display: inline-block;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
         @media (max-width: 700px) {
             main {
                 flex-direction: column;
@@ -87,6 +106,14 @@
             img {
                 width: 100%;
                 height: auto;
+            }
+
+            header {
+                margin: 0 10px;
+            }
+
+            header h1 {
+                font-size: 30px;
             }
         }
     </style>
@@ -99,31 +126,47 @@
         <p>As principais notícias sobre o Corinthians</p>
     </header>
 
+    <!-- NOTÍCIA 1 -->
     <main>
 
         <img
             src="imagem1.png"
-            alt="Imagem relacionada ao Corinthians">
+            alt="Corinthians durante partida contra o Fluminense">
 
         <div class="conteudo">
 
             <div class="noticia">
 
-                <h2>Corinthians perde para o Coritiba no Brasileirão</h2>
+                <span class="categoria">Brasileirão</span>
+
+                <h2>
+                    Corinthians perde para o Fluminense por 3 a 1
+                </h2>
 
                 <p class="artigo-autor">
                     Por: Thiago Ramos
                 </p>
 
-                <p>
-                    O Corinthians foi derrotado pelo Coritiba por 2 a 1,
-                    neste domingo, pelo Campeonato Brasileiro.
-                    O jogo aconteceu no Estádio Couto Pereira.
+                <p class="data">
+                    Atualizado em 22 de setembro de 2026
                 </p>
 
                 <p>
-                    Com o resultado, o Timão ficou com 32 pontos e
-                    ocupa a 10ª posição na tabela do Brasileirão.
+                    O Corinthians foi derrotado pelo Fluminense por
+                    3 a 1 neste domingo (20), na Neo Química Arena,
+                    pela 28ª rodada do Campeonato Brasileiro.
+                </p>
+
+                <p>
+                    Gustavo Henrique marcou o gol do Corinthians,
+                    enquanto Hulk marcou duas vezes e Serna completou
+                    o placar para o Fluminense.
+                </p>
+
+                <p>
+                    Com o resultado, o Timão chegou à sexta derrota
+                    consecutiva no Brasileirão e permanece com
+                    32 pontos.
                 </p>
 
                 <button class="curtir">
@@ -140,44 +183,151 @@
 
     </main>
 
+
+    <!-- NOTÍCIA 2 -->
     <main>
 
         <img
             src="imagem2.png"
-            alt="Imagem relacionada ao Corinthians">
+            alt="Memphis Depay e Rodrigo Garro pelo Corinthians">
 
         <div class="conteudo">
 
-            <h2>Corinthians se prepara para o clássico contra o Santos</h2>
+            <div class="noticia">
 
-            <p class="artigo-autor">
-                Por: Thiago Ramos
-            </p>
+                <span class="categoria">Futebol Masculino</span>
 
-            <p>
-                Depois da derrota para o Coritiba, o Corinthians terá
-                uma semana para se preparar para o próximo compromisso
-                pelo Campeonato Brasileiro.
-            </p>
+                <h2>
+                    Fernando Diniz avalia mudanças no Corinthians durante a Data Fifa
+                </h2>
 
-            <p>
-                O próximo adversário será o Santos, em um clássico
-                importante para o Timão na competição.
-            </p>
+                <p class="artigo-autor">
+                    Por: Thiago Ramos
+                </p>
 
-            <button class="curtir">
-                ❤️ <span>0</span>
-            </button>
+                <p class="data">
+                    Atualizado em 22 de setembro de 2026
+                </p>
 
-            <button class="curtir">
-                👍 <span>0</span>
-            </button>
+                <p>
+                    A comissão técnica do Corinthians está aproveitando
+                    o período de Data Fifa para trabalhar em mudanças
+                    no modelo de jogo da equipe.
+                </p>
+
+                <p>
+                    Entre as possibilidades estudadas está uma alteração
+                    nas funções de Rodrigo Garro e Memphis Depay.
+                    Garro pode atuar mais recuado, enquanto Memphis pode
+                    ficar mais próximo do ataque.
+                </p>
+
+                <p>
+                    A ideia ganhou força depois da mudança realizada
+                    durante o segundo tempo da partida contra o
+                    Fluminense.
+                </p>
+
+                <button class="curtir">
+                    ❤️ <span>0</span>
+                </button>
+
+                <button class="curtir">
+                    👍 <span>0</span>
+                </button>
+
+            </div>
 
         </div>
 
     </main>
 
+
+    <!-- NOTÍCIA 3 -->
+    <main>
+
+        <img
+            src="imagem3.png"
+            alt="Corinthians feminino comemora classificação">
+
+        <div class="conteudo">
+
+            <div class="noticia">
+
+                <span class="categoria">Futebol Feminino</span>
+
+                <h2>
+                    Corinthians vence Bahia e chega à décima final consecutiva do Brasileirão Feminino
+                </h2>
+
+                <p class="artigo-autor">
+                    Por: Thiago Ramos
+                </p>
+
+                <p class="data">
+                    Atualizado em 22 de setembro de 2026
+                </p>
+
+                <p>
+                    As Brabas do Corinthians venceram o Bahia por 1 a 0
+                    na Neo Química Arena e garantiram uma vaga na final
+                    do Campeonato Brasileiro Feminino.
+                </p>
+
+                <p>
+                    Jhonson marcou o gol da vitória aos 44 minutos do
+                    primeiro tempo, aproveitando o rebote após cobrança
+                    de falta de Duda Sampaio.
+                </p>
+
+                <p>
+                    Mesmo com a expulsão de Thaís Regina ainda no
+                    primeiro tempo, o Corinthians conseguiu manter
+                    o resultado e avançar para a decisão.
+                </p>
+
+                <p>
+                    Na final, o Corinthians enfrentará o São Paulo.
+                    A equipe busca seu oitavo título brasileiro.
+                </p>
+
+                <button class="curtir">
+                    ❤️ <span>0</span>
+                </button>
+
+                <button class="curtir">
+                    👍 <span>0</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer style="
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+        padding: 25px;
+        margin-top: 30px;
+    ">
+
+        <p>
+            🖤🤍 Blog do Timão
+        </p>
+
+        <p>
+            Notícias do Corinthians — atualizado em setembro de 2026
+        </p>
+
+    </footer>
+
+
     <script>
+
         const botoes = document.querySelectorAll(".curtir");
 
         botoes.forEach(function (botao) {
@@ -192,6 +342,7 @@
             });
 
         });
+
     </script>
 
 </body>
